@@ -1,0 +1,16 @@
+#csvFileInput{
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+}
+.message {
+    width: 500px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 14px;
+    color: #fff;
+    background: #fff;
+}
+.message.success {
+    background: green;
+}
