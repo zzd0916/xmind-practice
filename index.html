@@ -8,10 +8,17 @@
 </head>
 <body>
     <!-- 创建隐藏file input -->
-    <button type="button" name="seach" onclick="FuncCSVInport()">CSV Import</button>
+    <p class="tips">请按顺序导入categories.csv文件和bill.csv文件</p>
+    <button type="button" name="seach" class="btn" onclick="FuncCSVInport()">点击导入数据</button>
     <input type="file" id="csvFileInput"  accept=".csv"   onchange="readCSVFile(this)" />
+ 
 
-    <div class="message">读取数据成功</div>
-    <script src="./cvsTool.js"></script>
+    <!-- 全局提示信息 -->
+    <div class="message" id="message"></div>
+
+    <script src="./tool.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>

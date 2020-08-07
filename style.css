@@ -1,16 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    padding: 50px;
+    box-sizing: border-box;
+}
 #csvFileInput{
     position: absolute;
     right: 0px;
     opacity: 0;
 }
-.message {
-    width: 500px;
-    padding: 5px 10px;
-    color: #fff;
-    font-size: 14px;
-    color: #fff;
+.tips {
+    margin-bottom: 10px;
+    color: red;
     background: #fff;
+    font-size: 14px;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid #1890ff;
+    padding: 5px 10px;
+    background: #1890ff;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+.btn:active{
+    background: #5da4e4;
+    border: 1px solid #5da4e4;
+}
+.table {
+    margin-top: 15px;
+    width: 100%;
+}
+.table tr {
+    background: #fff;
+}
+.table tr:nth-child(2n) {
+    background: #f5f5f5;
+}
+.table th {
+    text-align: left;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+}
+.table td {
+    border: none;
+    min-height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #ccc;
+    padding: 0 5px;
+}
+.message {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    transition: all .2s;
+}
+.message.show {
+    top: 0px;
+}
+.message.hide {
+    top: -50px;
 }
 .message.success {
     background: green;
+}
+.message.error {
+    background: red;
+}
+.message.warning {
+    background: orange;
 }
